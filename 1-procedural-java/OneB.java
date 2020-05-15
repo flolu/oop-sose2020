@@ -61,5 +61,23 @@ public class OneB {
         max = a[i];
     }
     System.out.println(max);
+
+    /**
+     * E
+     * 
+     * Fehler in Zeile #36: `a[i] != 0`
+     * 
+     * Richtig: `while (i < a.length && a[i] == 0) i++;`
+     * 
+     * Die Schleife soll abbrechen wenn wir ein Element finden welches 0 ist.
+     * 
+     */
+    System.out.println("\nAusgabe von E: ");
+
+    int i = 0;
+    while (i < a.length && a[i] == 0)
+      i++;
+
+    System.out.println(i);
   }
 }

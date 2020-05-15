@@ -6,7 +6,7 @@ public class OneA {
 
     System.out.println(java.util.Arrays.toString(b));
     /**
-     * Output is [1, 2, 17, 4, -1, -2, -3, -4]
+     * Ausgabe ist [1, 2, 17, 4, -1, -2, -3, -4]
      */
   }
 }

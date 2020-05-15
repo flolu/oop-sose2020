@@ -1,18 +1,22 @@
-# Running Java on Ubuntu
+# OOP
 
-### 1. Install Java
+<img align="center" src="https://i.giphy.com/media/LmNwrBhejkK9EFP504/source.gif">
+
+## Java auf Ubuntu
+
+### 1. Java installieren
 
 ```bash
 sudo apt install default-jdk
 ```
 
-### 2. Compile code
+### 2. Code kompilieren
 
 ```bash
 javac Name.java
 ```
 
-### 3. Run code
+### 3. Programm starten
 
 ```bash
 java Name
