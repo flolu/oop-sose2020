@@ -44,5 +44,22 @@ public class OneB {
     }
     System.out.println("m" + java.util.Arrays.toString(m));
 
+    /**
+     * D
+     * 
+     * Fehler in Zeile #27: `max = 0`
+     * 
+     * Richtig: `int max = Integer.MIN_VALUE;`
+     * 
+     * Was ist wenn das Maxiumum kleiner als 0 ist? Also initialisieren wir max mit
+     * dem kleinstmöglichen Integer.
+     */
+    System.out.println("\nAusgabe von D: ");
+    int max = Integer.MIN_VALUE;
+    for (int i = 0; i < a.length; i++) {
+      if (a[i] > max)
+        max = a[i];
+    }
+    System.out.println(max);
   }
 }
