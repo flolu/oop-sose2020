@@ -4,11 +4,11 @@ public class OneC {
 
     boolean evenLength = a.length % 2 == 0;
     int a1[] = new int[evenLength ? a.length / 2 : a.length / 2 + 1], a2[] = new int[a.length / 2];
-    for (int j = 0; j < a.length; j++) {
-      if (j % 2 == 0)
-        a1[j / 2] = a[j];
+    for (int i = 0; i < a.length; i++) {
+      if (i % 2 == 0)
+        a1[i / 2] = a[i];
       else
-        a2[j / 2] = a[j];
+        a2[i / 2] = a[i];
     }
 
     System.out.println("a1: " + java.util.Arrays.toString(a1));
