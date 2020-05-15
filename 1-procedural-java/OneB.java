@@ -14,13 +14,13 @@ public class OneB {
     int sum = 0;
     for (int i = 0; i < a.length; i++)
       sum += a[i];
-    System.out.println("Ausgabe von A: ");
+    System.out.println("Ausgabe von A:");
     System.out.println("A sum: " + sum);
 
     /**
      * B sieht gut aus
      */
-    System.out.println("\nAusgabe von B: ");
+    System.out.println("\nAusgabe von B:");
     int k = 0;
     for (int i = 1; i <= a.length; i++)
       System.out.println(i + ": " + a[k++]);
@@ -36,7 +36,7 @@ public class OneB {
      * ist würde in der ersten Iteration der Schleife `m[1]` zugewiesen werden. Wir
      * wollen aber `m[0]`.
      */
-    System.out.println("\nAusgabe von C: ");
+    System.out.println("\nAusgabe von C:");
     int[] m = new int[a.length - 2];
     for (int i = 1; i < a.length - 1; i++) {
       int val = (a[i - 1] + a[i] + a[i + 1]);
@@ -54,7 +54,7 @@ public class OneB {
      * Was ist wenn das Maxiumum kleiner als 0 ist? Also initialisieren wir max mit
      * dem kleinstmöglichen Integer.
      */
-    System.out.println("\nAusgabe von D: ");
+    System.out.println("\nAusgabe von D:");
     int max = Integer.MIN_VALUE;
     for (int i = 0; i < a.length; i++) {
       if (a[i] > max)
@@ -72,12 +72,28 @@ public class OneB {
      * Die Schleife soll abbrechen wenn wir ein Element finden welches 0 ist.
      * 
      */
-    System.out.println("\nAusgabe von E: ");
+    System.out.println("\nAusgabe von E:");
 
     int i = 0;
     while (i < a.length && a[i] == 0)
       i++;
 
     System.out.println(i);
+
+    /**
+     * 1c
+     */
+    System.out.println("\nAusgabe von 1c:");
+    boolean evenLength = a.length % 2 == 0;
+    int a1[] = new int[evenLength ? a.length / 2 : a.length / 2 + 1], a2[] = new int[a.length / 2];
+    for (int j = 0; j < a.length; j++) {
+      if (j % 2 == 0)
+        a1[j / 2] = a[j];
+      else
+        a2[j / 2] = a[j];
+    }
+
+    System.out.println("a1: " + java.util.Arrays.toString(a1));
+    System.out.println("a2: " + java.util.Arrays.toString(a2));
   }
 }
