@@ -69,7 +69,7 @@ public class OneB {
      * 
      * Richtig: `while (i < a.length && a[i] == 0) i++;`
      * 
-     * Die Schleife soll abbrechen wenn wir ein Element finden welches 0 ist.
+     * Die Schleife soll abbrechen wenn wir ein Element finden welches nicht 0 ist.
      * 
      */
     System.out.println("\nAusgabe von E:");
