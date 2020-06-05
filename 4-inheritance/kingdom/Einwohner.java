@@ -1,5 +1,5 @@
 public class Einwohner {
-  protected double steuer_faktor = 0.1;
+  protected double steuerFaktor = 0.1;
   protected int einkommen;
   protected int mindestAbgabe = 1;
 
@@ -8,7 +8,7 @@ public class Einwohner {
   }
 
   int steuer() {
-    int abgabe = (int) Math.floor(this.zuVersteuerndesEinkommen() * this.steuer_faktor);
+    int abgabe = (int) Math.floor(this.zuVersteuerndesEinkommen() * this.steuerFaktor);
     return abgabe > this.mindestAbgabe ? abgabe : this.mindestAbgabe;
   }
 
