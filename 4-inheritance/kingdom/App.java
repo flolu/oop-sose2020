@@ -1,7 +1,7 @@
 public class App {
     public static void main(String[] args) throws Exception {
         Leibeigener le = new Leibeigener();
-        le.setEinkommen(22);
+        le.setEinkommen(42);
         System.err.println("Steuer Leibeigener: " + le.steuer());
 
         Koenig k = new Koenig();
