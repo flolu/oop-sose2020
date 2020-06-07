@@ -22,7 +22,7 @@ class DynIntArray {
       if (i == 0) {
         da = new DIAarray();
       } else if (i == 1) {
-        da = new DIAlist();
+        da = new DIAlist2();
       }
       da.add(4);
       da.add(8);
