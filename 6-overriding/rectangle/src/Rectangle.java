@@ -43,9 +43,6 @@ public class Rectangle extends Figure implements MobileObject {
   }
 
   void getLocationRelation(Rectangle r) {
-    System.out.println("intersection y: " + intersectionYAxis(r));
-    System.out.println("intersection x: " + intersectionXAxis(r));
-
     double intersectionY = intersectionYAxis(r);
     double intersectionX = intersectionXAxis(r);
 
