@@ -85,5 +85,4 @@ public class Rectangle extends Figure implements MobileObject {
       return max2 - min2;
     return max1 > max2 ? max2 - min1 : max1 - min2;
   }
-
 }
