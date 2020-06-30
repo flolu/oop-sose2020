@@ -22,7 +22,7 @@ public class StringMengeImpl extends AbstrakteStringMenge {
     int i = 0;
     Iterator<String> iterator = list.iterator();
     while(iterator.hasNext()) {
-			array[i] = iterator.next();
+      array[i] = iterator.next();
       i++;
     }
     return array;

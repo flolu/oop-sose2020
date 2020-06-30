@@ -4,23 +4,23 @@ import java.util.Iterator;
 public abstract class AbstrakteStringMenge implements StringMenge {
   protected LinkedList<String> list = new LinkedList<String>();
 
-	public int getCharCount() {
-		int count = 0;
+  public int getCharCount() {
+    int count = 0;
     Iterator<String> iterator = list.iterator();
     while(iterator.hasNext()) {
       count += iterator.next().length();
     }
-		return count;
-	}
+    return count;
+  }
 
-	public boolean isEmpty() {
-		return list.size() <= 0;
-	}
+  public boolean isEmpty() {
+    return list.size() <= 0;
+  }
 
-	public void print() {
+  public void print() {
     Iterator<String> iterator = list.iterator();
     while(iterator.hasNext()) {
-			System.out.printf(iterator.next());
+      System.out.printf(iterator.next());
     }
-	}
+  }
 }
